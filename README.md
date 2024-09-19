@@ -6,6 +6,7 @@ This is a simple BMI (Body Mass Index) calculator web application. The app allow
 - [Overview](#overview)
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
+- [Screenshot] (#screenshot)
 - [Usage](#usage)
 - [Key Files](#key-files)
 - [Technologies Used](#technologies-used)
@@ -65,13 +66,17 @@ Or on Windows:
 
     The backend server will be available at http://localhost:8080.
 
-Usage
+## Screenshot
+![image](https://github.com/user-attachments/assets/939867ef-ad47-4223-bf4d-1f1840820c04)
+
+
+## Usage
 
     Enter your weight in kilograms and height in inches in the input fields.
     Click on the "Calculate BMI" button to see your BMI and the corresponding category.
     The WHO BMI category table is provided on the right side (or below on mobile devices) for reference.
 
-Key Files
+## Key Files
 Frontend (fe/src/)
 
     App.js: Main component of the React application. Contains the layout and logic for the BMI calculation.
@@ -106,7 +111,7 @@ Backend Files
         REST controller that provides endpoints for basic arithmetic operations and BMI calculation.
         Endpoint GET /api/bmi takes weight and height as parameters and returns the calculated BMI.
 
-Technologies Used
+## Technologies Used
 
     Frontend: React, CSS
     Backend: Java, Spring Boot
