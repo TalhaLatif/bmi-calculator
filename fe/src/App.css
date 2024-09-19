@@ -1,0 +1,156 @@
+/* Set the background color of the entire page */
+body {
+  background-color: #282c34; /* Set to match the .App-header background */
+  margin: 0; /* Remove default margin */
+  font-family: 'Arial', sans-serif; /* Set a default font */
+  color: white; /* Set default text color to white for contrast */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  padding: 20px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between the calculator and the table */
+  margin-top: 20px;
+}
+
+/* Calculator styling */
+.calculator {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #21a1f1;
+}
+
+/* Table styling */
+.bmi-table {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white; /* Text color */
+}
+
+.bmi-table table {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #282c34; /* Change this to match the overall background */
+}
+
+.bmi-table th,
+.bmi-table td {
+  padding: 10px;
+  border: 1px solid #555; /* Darker border to match dark theme */
+}
+
+.bmi-table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.bmi-table tbody tr:nth-child(odd) {
+  background-color: #3a3f47; /* Slightly lighter for row distinction */
+}
+
+.bmi-table tbody tr:nth-child(even) {
+  background-color: #444b55; /* Another shade for even rows */
+}
+/* Add these styles to App.css */
+
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between the calculator and the table */
+  margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally */
+  }
+
+  .calculator, .bmi-table {
+    width: 100%; /* Full width for both elements */
+    max-width: 400px; /* Set a maximum width */
+    margin-bottom: 20px; /* Add space below each element */
+  }
+}
+
+/* Form field container styling */
+.calculator div {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 15px; /* Add space between form fields */
+}
+
+/* Label styling */
+.calculator label {
+  margin-bottom: 5px; /* Add space below the label */
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+}
+
+/* Input field styling */
+.calculator input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Full width */
+  max-width: 300px; /* Optional: max width to keep inputs aligned */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+
+/* Styling for the BMI result */
+.bmi-result {
+  margin-top: 20px; /* Add space above the BMI result */
+  text-align: center; /* Center align the result */
+  display: flex; /* Add flex to control the alignment */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+/* Feedback styling */
+.feedback {
+  margin-top: 10px; /* Add margin to separate from BMI value */
+  font-size: 18px; /* Slightly larger font for readability */
+  font-weight: bold; /* Make the feedback bold */
+  color: #61dafb; /* Make the feedback text color consistent with button color */
+}
