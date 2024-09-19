@@ -1,0 +1,6 @@
+# Ignore target directory and build artifacts
+/BE/CALapp/target/
+*.class
+
+# Don't ignore source files
+!BE/CALapp/src/
