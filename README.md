@@ -6,7 +6,7 @@ This is a simple BMI (Body Mass Index) calculator web application. The app allow
 - [Overview](#overview)
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
-- [Screenshot] (#screenshot)
+- [Screenshot](#screenshot)
 - [Usage](#usage)
 - [Key Files](#key-files)
 - [Technologies Used](#technologies-used)
